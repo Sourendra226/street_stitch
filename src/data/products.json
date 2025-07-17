@@ -1,0 +1,704 @@
+[
+  {
+    "id": 1,
+    "name": "Printed Shirt",
+    "price": 18.0,
+    "oldPrice": 30.0,
+    "image": "/assets/images/products/printed_shirt.jpg",
+    "images": [
+      "/assets/images/products/printed_shirt1.jpg",
+      "/assets/images/products/printed_shirt2.jpg",
+      "/assets/images/products/printed_shirt3.jpg",
+      "/assets/images/products/printed_shirt4.jpg",
+      "/assets/images/products/printed_shirt5.jpg"
+    ],
+    "badge": "New",
+    "colors": ["#8fbc8f", "#4682b4", "#87ceeb"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Levis",
+    "categories": ["Topwear", "Ethnic Wear"],
+    "gender": ["Unisex"],
+    "offers": ["specialPrice", "noCostEMI"],
+    "discount": "fortyPercent",
+    "rating": 4.3,
+    "sales": 1200,
+    "description": "Made from 100% breathable cotton, this printed shirt blends street-style attitude with all-day comfort. Featuring a relaxed silhouette, button-front closure, and a statement print that turns heads without trying too hard. Designed to wear solo or layered — from the sidewalk to your next rooftop session.",
+    "reviews": "1253",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "226",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Made with 100% natural cotton and digitally printed using low-impact dyes, this shirt is a conscious pick for your wardrobe. The fabric is soft on skin, tough on wear, and designed to age with character. Mindfully made for those who care how it's made — and how it looks.",
+      "specsList": [
+        { "label": "Material", "value": "100% Pure Cotton" },
+        { "label": "Fit", "value": "Relaxed / Slightly Oversized (Unisex)" },
+        { "label": "Pattern", "value": "All-over digital print" },
+        { "label": "Collar", "value": "Classic spread collar" },
+        { "label": "Closure", "value": "Front button placket" },
+        { "label": "Sleeves", "value": "Short" },
+        { "label": "Hem", "value": "Straight with subtle side slits" },
+        { "label": "Designed in", "value": "USA" },
+        { "label": "Sizes Available", "value": "XS - XXL" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Crafted from 100% premium cotton, this shirt offers a breathable, natural feel that gets softer with every wear. The fabric is lightweight yet durable — perfect for all-day comfort and layering across seasons.",
+      "materialList": [
+        { "label": "Fabric", "value": "100% Pure Cotton" },
+        { "label": "Weight", "value": "Mid weight, 150-160 GSM" },
+        { "label": "Texture", "value": "Soft-touch finish with a smooth drape" },
+        { "label": "Print", "value": "Eco-safe digital inks with long-lasting color" },
+        { "label": "Feel", "value": "Breathable, non-stretch woven" },
+        { "label": "Origin", "value": "Responsibly sourced cotton" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Machine wash cold with like colors",
+        "Use mild detergent",
+        "Do not bleach",
+        "Tumble dry low or hang to dry",
+        "Iron on low heat if needed (avoid direct contact with print)",
+        "Do not dry clean"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "Dark Sea Green, Steel Blue, Sky Blue",
+      "SKU": "226"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bomber Jacket",
+    "price": 42.0,
+    "oldPrice": 58.0,
+    "image": "/assets/images/products/bomber_jacket.jpg",
+    "images": [
+      "/assets/images/products/bomber_jacket1.jpg",
+      "/assets/images/products/bomber_jacket2.jpg",
+      "/assets/images/products/bomber_jacket3.jpg",
+      "/assets/images/products/bomber_jacket4.jpg",
+      "/assets/images/products/bomber_jacket5.jpg"
+    ],
+    "badge": "New",
+    "colors": ["#d2691e", "#d49a06", "#000000"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Sin Denim",
+    "categories": ["Topwear", "Winter Wear"],
+    "gender": "Unisex",
+    "offers": [""],
+    "discount": "",
+    "rating": 4.5,
+    "sales": 1850,
+    "description": "This isn't just a jacket — it's a statement. Built with attitude and utility in mind, the Street Stitch Bomber brings heavyweight structure, clean lines, and just the right amount of flex. Whether you're layering it over a hoodie or rocking it with cargos, this piece takes your fit to another level.",
+    "reviews": "3220",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "227",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "This isn't just a jacket — it's a statement. Built with attitude and utility in mind, the Street Stitch Bomber brings heavyweight structure, clean lines, and just the right amount of flex. Whether you're layering it over a hoodie or rocking it with cargos, this piece takes your fit to another level.",
+      "specsList": [
+        { "label": "Material", "value": "100% Nylon or Poly-Twill" },
+        { "label": "Fit", "value": "Relaxed / Slightly Oversized (Unisex)" },
+        { "label": "Pattern", "value": "All-over digital print" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Built for both comfort and function, this bomber jacket blends durable shell fabric with a soft inner lining — keeping you ready for the streets and whatever weather comes with it.",
+      "materialList": [
+        { "label": "Outer Shell", "value": "100% Nylon or Poly-Twill (water-resistant finish)" },
+        { "label": "Lining", "value": "Soft brushed polyester or quilted satin for lightweight warmth" },
+        { "label": "Ribbing", "value": "Cotton-polyester blend cuffs, hem, and collar" },
+        { "label": "Closure", "value": "Heavy-duty front zipper with matte black finish" },
+        { "label": "Pockets", "value": "Side welt pockets + optional interior stash pocket" },
+        { "label": "Finish", "value": "Matte or semi-gloss texture with minimal branding" },
+        { "label": "Weight", "value": "Midweight construction — ideal for layering" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Hand wash cold or machine wash on gentle cycle",
+        "Use mild detergent only",
+        "Do not bleach",
+        "Do not tumble dry — lay flat or hang to dry",
+        "Cool iron if needed (avoid ironing over zippers or ribbing)",
+        "Do not dry clean unless stated on care tag"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Winterwear",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "Chocolate, Gold, Black",
+      "SKU": "227"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Classic Top",
+    "price": 30.0,
+    "oldPrice": 42.0,
+    "image": "/assets/images/products/classic_top.jpg",
+    "images": [
+      "/assets/images/products/classic_top1.jpg",
+      "/assets/images/products/classic_top2.jpg",
+      "/assets/images/products/classic_top3.jpg",
+      "/assets/images/products/classic_top4.jpg",
+      "/assets/images/products/classic_top5.jpg"
+    ],
+    "badge": "New",
+    "colors": ["#ffa07a", "#000000", "#bdb76b"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Highlander",
+    "categories": ["Topwear", "Ethnic Wear"],
+    "gender": ["Women", "Girls"],
+    "offers": ["specialPrice", "buySaveMore"],
+    "discount": "thirtyPercent",
+    "rating": 3.8,
+    "sales": 1780,
+    "description": "Timeless, breathable, and effortlessly versatile — this Classic Top is made from 100% pure cotton to keep you cool, comfortable, and confident all day long. Designed with a flattering silhouette and soft-touch finish, it pairs perfectly with denim, skirts, or layered under a blazer for a dressed-up twist.",
+    "reviews": "1853",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "228",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Timeless, breathable, and effortlessly versatile — this Classic Top is made from 100% pure cotton to keep you cool, comfortable, and confident all day long. Designed with a flattering silhouette and soft-touch finish, it pairs perfectly with denim, skirts, or layered under a blazer for a dressed-up twist.",
+      "specsList": [
+        { "label": "Material", "value": "Made from 100% breathable cotton" },
+        { "label": "Fit", "value": "Lightweight, soft-touch fabric for all-day comfort" },
+        { "label": "Pattern", "value": "All-over digital print" },
+        { "label": "Type", "value": "Short sleeves for a breezy, versatile look" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Crafted for everyday ease, this top is made with 100% pure cotton — breathable, lightweight, and soft against the skin. It's built to keep up with you through warm days, casual outings, and endless outfit changes.",
+      "materialList": [
+        { "label": "Fabric", "value": "100% Pure Cotton (Natural fiber)" },
+        { "label": "Weight", "value": "Lightweight feel, approx. 140-160 GSM" },
+        { "label": "Feel & Finish", "value": "Soft-touch surface, gentle on sensitive skin" },
+        { "label": "Sustainability & Care", "value": "Machine washable, easy to care for" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Machine wash cold with similar colors",
+        "Use mild or gentle detergent",
+        "Do not bleach",
+        "Tumble dry low or hang to air dry",
+        "Iron on low heat if needed",
+        "Do not dry clean"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "Light Salmon, Black, Dark Khaki",
+      "SKU": "228"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Knitted T-Shirt",
+    "price": 22.0,
+    "oldPrice": 38.0,
+    "image": "/assets/images/products/knitted_tshirt.jpg",
+    "images": [
+      "/assets/images/products/knitted_tshirt1.jpg",
+      "/assets/images/products/knitted_tshirt2.jpg",
+      "/assets/images/products/knitted_tshirt3.jpg",
+      "/assets/images/products/knitted_tshirt4.jpg",
+      "/assets/images/products/knitted_tshirt5.jpg"
+    ],
+    "badge": "New",
+    "colors": ["#4682b4", "#87ceeb", "#d49a06"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Peter England",
+    "categories": "Topwear",
+    "gender": ["Men", "Boys"],
+    "offers": ["specialPrice", "noCostEMI"],
+    "discount": "thirtyPercent",
+    "rating": 4.5,
+    "sales": 5150,
+    "description": "Engineered for comfort and built to last, this men's knitted t-shirt combines flexibility with subtle texture — perfect for everyday wear with a premium feel.",
+    "reviews": "8453",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "229",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Engineered for comfort and built to last, this men's knitted t-shirt combines flexibility with subtle texture — perfect for everyday wear with a premium feel.",
+      "specsList": [
+        { "label": "Material", "value": "100% knitted cotton or cotton-blend" },
+        { "label": "Weave", "value": "Fine-gauge knit for stretch and breathability" },
+        { "label": "Texture", "value": "Smooth on the outside, slightly textured on the inside" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Crafted with care using high-quality cotton yarn, this knitted t-shirt is made to move with you — without losing its shape or comfort.",
+      "materialList": [
+        { "label": "Fabric", "value": "100% knitted cotton (or cotton-blend for select colors)" },
+        { "label": "Weight", "value": "Mid weight, 160-180 GSM — breathable and substantial" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Machine wash cold with like colors",
+        "Use mild detergent",
+        "Do not bleach",
+        "Tumble dry low or hang to dry",
+        "Iron inside-out on low heat",
+        "Do not dry clean"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "Steel Blue, Sky Blue, Gold",
+      "SKU": "229"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Men's Regular Shorts",
+    "price": 11.5,
+    "oldPrice": 20.0,
+    "image": "/assets/images/products/regular_shorts.jpg",
+    "images": [
+      "/assets/images/products/regular_shorts1.jpg",
+      "/assets/images/products/regular_shorts2.jpg",
+      "/assets/images/products/regular_shorts3.jpg",
+      "/assets/images/products/regular_shorts4.jpg"
+    ],
+    "badge": "",
+    "colors": ["#c7a890", "#3a3b38", "#a4a4a4", "#eae9e5"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Tommy Hilfiger",
+    "categories": "Bottomwear",
+    "gender": ["Men", "Boys"],
+    "offers": ["specialPrice"],
+    "discount": "sixtyPercent",
+    "rating": 4.2,
+    "sales": 3150,
+    "description": "Designed for all-day comfort and easy movement, our Men's Regular Shorts are built to keep up with you — from laid-back weekends to on-the-go errands. With a clean, modern fit and breathable construction, they're your everyday go-to for effortless style and function.",
+    "reviews": "3253",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "230",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Designed for all-day comfort and easy movement, our Men's Regular Shorts are built to keep up with you — from laid-back weekends to on-the-go errands. With a clean, modern fit and breathable construction, they're your everyday go-to for effortless style and function.",
+      "specsList": [
+        { "label": "Material", "value": "100% Pure Cotton" },
+        { "label": "Fit", "value": "Regular fit: not too tight, not too loose" },
+        { "label": "Length", "value": "Mid-thigh length for a versatile silhouette" },
+        { "label": "Storage", "value": "Side pockets + back pocket for storage" },
+        { "label": "Type", "value": "Elastic waistband with internal drawstring for adjustable comfort" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Crafted from durable, lightweight cotton (or cotton-blend), these shorts offer breathability, comfort, and flexibility for all-day wear — whether you're lounging or heading out.",
+      "materialList": [
+        { "label": "Fabric", "value": "100% Cotton or Cotton-Twill blend (based on color)" },
+        { "label": "Weight", "value": "Approx. 180-200 GSM for structure without bulk" },
+        { "label": "Construction", "value": "Pre-washed for a softer feel and minimal shrinkage" },
+        { "label": "Sustainability", "value": "Responsibly sourced materials" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Machine wash cold with similar colors",
+        "Tumble dry low or hang to dry",
+        "Do not bleach",
+        "Warm iron if needed",
+        "Do not dry clean"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "230"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Comfortable Walking Shoes",
+    "price": 52.0,
+    "oldPrice": 68.0,
+    "image": "/assets/images/products/walking_shoes.jpg",
+    "images": [
+      "/assets/images/products/walking_shoes1.jpg",
+      "/assets/images/products/walking_shoes2.jpg",
+      "/assets/images/products/walking_shoes3.jpg",
+      "/assets/images/products/walking_shoes4.jpg"
+    ],
+    "badge": "",
+    "colors": ["#fbf2e3", "#999584", "#eae9e5"],
+    "sizes": ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9"],
+    "brand": "",
+    "categories": "Accessories",
+    "gender": "Unisex",
+    "offers": ["buySaveMore"],
+    "discount": "thirtyPercent",
+    "rating": 4.1,
+    "sales": 1150,
+    "description": "Walk easy. Move freely. These unisex walking shoes are designed with comfort-first cushioning, breathable materials, and everyday versatility — whether you're strolling the city, running errands, or traveling light. Made for support and style, they're built to go wherever you do.",
+    "reviews": "1490",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "231",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Walk easy. Move freely. These unisex walking shoes are designed with comfort-first cushioning, breathable materials, and everyday versatility — whether you're strolling the city, running errands, or traveling light. Made for support and style, they're built to go wherever you do.",
+      "specsList": [
+        { "label": "Design", "value": "Unisex design with a universal fit for all" },
+        { "label": "Fit", "value": "Lightweight, flexible sole for all-day ease" },
+        { "label": "Outsole Type", "value": "Rubberized outsole for extra grip and durability" },
+        { "label": "Insole Type", "value": "Cushioned insole for impact absorption" },
+        { "label": "Fabric", "value": "Breathable upper to keep feet cool and dry" },
+        { "label": "Type", "value": "Ideal for casual walking, light travel, or everyday wear" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "These walking shoes blend engineered comfort with breathable performance — using quality materials designed to support every step.",
+      "materialList": [
+        { "label": "Upper Material", "value": "Knit or mesh fabric for breathability" },
+        { "label": "Insole", "value": "Removable insole for easy cleaning or replacement" },
+        { "label": "Midsole", "value": "Lightweight midsole with flexible shock absorption" },
+        { "label": "Outsole", "value": "Non-slip rubber with tread pattern for traction" },
+        { "label": "Eco Notes", "value": "Vegan-friendly materials (no animal-derived components)" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Spot clean with a damp cloth and mild soap",
+        "Do not machine wash or dry",
+        "Remove insoles and air out regularly",
+        "For deeper cleaning, use a soft brush with warm water",
+        "Store in a dry, well-ventilated area away from direct sunlight"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Accessories, Unisex",
+      "Size": "UK 5, UK 6, UK 7, UK 8, UK 9",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "231"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Summer Printed Tank Top",
+    "price": 17.5,
+    "oldPrice": 35.0,
+    "image": "/assets/images/products/tank_top.jpg",
+    "images": [
+      "/assets/images/products/tank_top1.jpg",
+      "/assets/images/products/tank_top2.jpg",
+      "/assets/images/products/tank_top3.jpg",
+      "/assets/images/products/tank_top4.jpg"
+    ],
+    "badge": "",
+    "colors": ["#e0d9ce", "#dfd8d7", "#d9d9e7", "#a42839"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Pepe Jeans",
+    "categories": "Topwear",
+    "gender": ["Women", "Girls"],
+    "offers": ["specialPrice", "noCostEMI"],
+    "discount": "thirtyPercent",
+    "rating": 4.8,
+    "sales": 6150,
+    "description": "Easy, breezy, and made for sunny days — this Summer Printed Tank Top is a warm-weather staple. With bold prints, soft cotton fabric, and a flattering silhouette, it's the top you'll want on repeat all season long. Whether you're beach-bound, brunching, or lounging, this tank keeps you cool and effortlessly styled.",
+    "reviews": "6253",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "232",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Easy, breezy, and made for sunny days — this Summer Printed Tank Top is a warm-weather staple. With bold prints, soft cotton fabric, and a flattering silhouette, it's the top you'll want on repeat all season long. Whether you're beach-bound, brunching, or lounging, this tank keeps you cool and effortlessly styled.",
+      "specsList": [
+        { "label": "Material", "value": "100% Pure Cotton" },
+        { "label": "Fit", "value": "Sleeveless design with a relaxed, feminine fit" },
+        { "label": "Pattern", "value": "Vibrant summer-ready prints" },
+        { "label": "Comfort", "value": "Soft, breathable cotton for all-day comfort" },
+        { "label": "Feel", "value": "Lightweight feel perfect for warm weather" },
+        { "label": "Suitable", "value": "Ideal for vacations, weekend wear, or layering" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "This tank top is crafted from soft-touch, 100% cotton — perfect for summer wear and gentle on skin.",
+      "materialList": [
+        { "label": "Fabric", "value": "100% breathable cotton" },
+        { "label": "Weight", "value": "Lightweight fabric (approx. 130-150 GSM)" },
+        { "label": "Print", "value": "Printed using colorfast, skin-safe dyes" },
+        { "label": "Feel", "value": "Smooth on the outside, ultra-soft inside" },
+        { "label": "Sustainable Qualities", "value": "Made in small batches to reduce waste" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Machine wash cold, gentle cycle",
+        "Wash inside-out to protect the print",
+        "Use mild detergent",
+        "Do not bleach",
+        "Hang to dry or tumble dry low",
+        "Cool iron if needed (do not iron on print)",
+        "Do not dry clean"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Seasonal Wear",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "232"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Top Handle Shoulder Bag",
+    "price": 16.0,
+    "oldPrice": 31.0,
+    "image": "/assets/images/products/shoulder_bag.jpg",
+    "images": [
+      "/assets/images/products/shoulder_bag1.jpg",
+      "/assets/images/products/shoulder_bag2.jpg",
+      "/assets/images/products/shoulder_bag3.jpg",
+      "/assets/images/products/shoulder_bag4.jpg"
+    ],
+    "badge": "",
+    "colors": ["#2a2829", "#cfcabe", "#3f4642", "#262a4a"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "",
+    "categories": "Accessories",
+    "gender": ["Women", "Girls"],
+    "offers": ["buySaveMore"],
+    "discount": "seventyPercent",
+    "rating": 4.0,
+    "sales": 3650,
+    "description": "Where elegance meets everyday function. This Top Handle Shoulder Bag blends modern minimalism with classic style — crafted from premium leather and designed to elevate any outfit. With structured lines, a soft-touch finish, and just the right amount of space, it's your go-to accessory for brunches, boardrooms, and everything in between.",
+    "reviews": "3353",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "233",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Where elegance meets everyday function. This Top Handle Shoulder Bag blends modern minimalism with classic style — crafted from premium leather and designed to elevate any outfit. With structured lines, a soft-touch finish, and just the right amount of space, it's your go-to accessory for brunches, boardrooms, and everything in between.",
+      "specsList": [
+        { "label": "Design", "value": "Structured top-handle design with detachable shoulder strap" },
+        { "label": "Material", "value": "Crafted from genuine premium leather" },
+        { "label": "Space", "value": "Spacious main compartment with inner zip & slip pockets" },
+        { "label": "Style", "value": "Versatile — carry it by hand or wear it on the shoulder" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Made with high-quality materials chosen for durability, elegance, and comfort in daily use.",
+      "materialList": [
+        { "label": "Exterior", "value": "100% genuine leather (smooth grain or pebbled texture)" },
+        { "label": "Interior", "value": "Includes 1 internal zip pocket + 2 slip compartments" },
+        { "label": "Hardware", "value": "Sturdy D-rings and strap clips" },
+        { "label": "Finishes", "value": "Magnetic or zip closure options based on design" }
+      ],
+      "washTitle": "Leather Care & Cleaning Instructions:",
+      "washList": [
+        "Wipe gently with a soft, dry or slightly damp cloth",
+        "Avoid prolonged exposure to direct sunlight or moisture",
+        "Store in a dust bag when not in use",
+        "Do not wash, bleach, or iron",
+        "Use leather conditioner occasionally to maintain suppleness",
+        "Avoid contact with oils, perfumes, or dyed fabrics"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Accessories",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "233"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Floppy Hat With Band",
+    "price": 16.0,
+    "oldPrice": 28.0,
+    "image": "/assets/images/products/floppy_hat.jpg",
+    "images": [
+      "/assets/images/products/floppy_hat1.jpg",
+      "/assets/images/products/floppy_hat2.jpg",
+      "/assets/images/products/floppy_hat3.jpg",
+      "/assets/images/products/floppy_hat4.jpg"
+    ],
+    "badge": "",
+    "colors": ["#eccd9c", "#c7a890", "#a8704e", "#161616"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Turtle",
+    "categories": "Accessories",
+    "gender": "Unisex",
+    "offers": ["specialPrice"],
+    "discount": "fiftyPercent",
+    "rating": 3.9,
+    "sales": 1956,
+    "description": "Shade meets style. This unisex Floppy Hat With Band blends effortless fashion with sun-smart functionality. Featuring a wide, flexible brim and a contrasting band detail, it's the perfect finishing touch to elevate any warm-weather look — from beach days to outdoor brunches.",
+    "reviews": "1973",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "234",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Shade meets style. This unisex Floppy Hat With Band blends effortless fashion with sun-smart functionality. Featuring a wide, flexible brim and a contrasting band detail, it's the perfect finishing touch to elevate any warm-weather look — from beach days to outdoor brunches.",
+      "specsList": [
+        { "label": "Design", "value": "Unisex design with classic floppy silhouette" },
+        { "label": "Fit", "value": "One-size or adjustable fit (based on style)" },
+        { "label": "Suitable", "value": "Ideal for beachwear, festivals, travel, and casual wear" },
+        { "label": "Portablity", "value": "Packs flat for easy travel without losing shape" },
+        { "label": "Weight", "value": "Lightweight and breathable construction" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Built for both comfort and style, the hat uses breathable, durable materials that hold shape and offer long-lasting wear.",
+      "materialList": [
+        { "label": "Main Composition", "value": "100% woven straw / cotton / polyester-blend (based on style)" },
+        { "label": "Band Composition", "value": "Faux leather, cotton twill, or grosgrain ribbon" },
+        { "label": "Features", "value": "Lightweight and breathable for warm climates" },
+        { "label": "Finish", "value": "Sweatband lining inside for extra comfort" },
+        { "label": "Sustainability", "value": "Made from responsibly sourced or recycled materials" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Spot clean with a damp cloth and mild soap",
+        "Do not machine wash or tumble dry",
+        "Avoid soaking or submerging in water",
+        "Reshape brim while damp and air dry flat",
+        "Store in a cool, dry place or hang on a wide hook",
+        "Use a hat box or stuff with soft paper to retain crown shape"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Accessories",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "234"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Rounded Handcrafted Handbag",
+    "price": 11.5,
+    "oldPrice": 20.0,
+    "image": "/assets/images/products/handcrafted_handbag.jpg",
+    "images": [
+      "/assets/images/products/handcrafted_handbag1.jpg",
+      "/assets/images/products/handcrafted_handbag2.jpg",
+      "/assets/images/products/handcrafted_handbag3.jpg",
+      "/assets/images/products/handcrafted_handbag4.jpg"
+    ],
+    "badge": "",
+    "colors": ["#d69a58", "#FFCE8B", "#EDE8D0", "#E4D96F"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "",
+    "categories": "Accessories",
+    "gender": ["Women", "Girls"],
+    "offers": [""],
+    "discount": "",
+    "rating": 3.8,
+    "sales": 2858,
+    "description": "Timeless craft, modern charm. This Rounded Handcrafted Handbag is an elegant expression of tradition and trend — skillfully made with attention to detail, from curved silhouette to hand-stitched accents. Lightweight yet structured, it's the perfect companion for everything from city strolls to special evenings.",
+    "reviews": "2953",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "235",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Timeless craft, modern charm. This Rounded Handcrafted Handbag is an elegant expression of tradition and trend — skillfully made with attention to detail, from curved silhouette to hand-stitched accents. Lightweight yet structured, it's the perfect companion for everything from city strolls to special evenings.",
+      "specsList": [
+        { "label": "Design", "value": "Distinctive round silhouette with handcrafted detailing" },
+        { "label": "Weight", "value": "Lightweight and structured for everyday or occasional wear" },
+        { "label": "Space", "value": "Compact yet spacious interior — fits essentials with ease" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "This bag is made using high-quality natural materials and handcrafted techniques that celebrate heritage and individuality.",
+      "materialList": [
+        { "label": "Exterior", "value": "Handwoven rattan, raffia, straw, or eco-leather (based on style)" },
+        { "label": "Interior", "value": "Soft cotton or linen-blend fabric lining" },
+        { "label": "Straps", "value": "Leather or faux-leather handle and crossbody strap" },
+        { "label": "Hardware", "value": "Polished brass or antique-finish hardware" },
+        { "label": "Eco Notes", "value": "Eco-conscious materials and low-waste production methods" }
+      ],
+      "washTitle": "Care & Cleaning Instructions:",
+      "washList": [
+        "Gently wipe with a dry or slightly damp cloth",
+        "Do not wash, soak, or bleach",
+        "Avoid overfilling to maintain shape",
+        "Store in dust bag or breathable fabric pouch",
+        "Keep away from prolonged sunlight, water, and oils",
+        "Use leather conditioner (if applicable) only on genuine leather parts"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Accessories",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "235"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Linen Belted Shirt",
+    "price": 29.99,
+    "oldPrice": 39.99,
+    "image": "/assets/images/products/belted_shirt.jpg",
+    "images": [
+      "/assets/images/products/belted_shirt1.jpg",
+      "/assets/images/products/belted_shirt2.jpg",
+      "/assets/images/products/belted_shirt3.jpg",
+      "/assets/images/products/belted_shirt4.jpg",
+      "/assets/images/products/belted_shirt5.jpg"
+    ],
+    "badge": "",
+    "colors": ["#e9e5e1", "#e5e2e5", "#161616", "#dfdadc"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "brand": "Louis Phillipe",
+    "categories": ["Topwear", "Ethnic Wear", "Office Wear", "Winter Wear"],
+    "gender": ["Women", "Girls"],
+    "offers": ["specialPrice", "noCostEMI"],
+    "discount": "seventyPercent",
+    "rating": 4.8,
+    "sales": 7450,
+    "description": "Light, breathable, and effortlessly polished — the Linen Belted Shirt brings everyday ease with a tailored twist. Made for women and girls who love a structured look with relaxed charm, this shirt features a removable belt that cinches the waist, creating a flattering silhouette you can wear tucked, untucked, or layered.",
+    "reviews": "7253",
+    "deliveryText": "Estimated delivery time: 2 - 3 days",
+    "returnText": "Within 14 days of purchase",
+    "sku": "236",
+    "tabDescription": {
+      "specsTitle": "Product Specifications:",
+      "specsText": "Light, breathable, and effortlessly polished — the Linen Belted Shirt brings everyday ease with a tailored twist. Made for women and girls who love a structured look with relaxed charm, this shirt features a removable belt that cinches the waist, creating a flattering silhouette you can wear tucked, untucked, or layered.",
+      "specsList": [
+        { "label": "Material", "value": "Made with 100% natural linen" },
+        { "label": "Fit", "value": "Adjustable waist with removable fabric belt" },
+        { "label": "Weight", "value": "Lightweight and breathable — ideal for warm days" },
+        { "label": "Suitable", "value": "Perfect for both casual days and elevated looks" }
+      ],
+      "materialTitle": "Material:",
+      "materialText": "Crafted from premium linen, this shirt is naturally breathable, durable, and perfect for warm-weather wear.",
+      "materialList": [
+        { "label": "Fabric", "value": "100% linen (natural, plant-based fiber)" },
+        { "label": "Weight", "value": "Lightweight Approx. 130-150 GSM" },
+        { "label": "Feel", "value": "Woven texture with a relaxed drape" },
+        { "label": "Finish", "value": "Slightly sheer in lighter colors — best with nude innerwear" },
+        { "label": "Sustainable Qualities", "value": "Requires less water to produce compared to cotton" }
+      ],
+      "washTitle": "Washing Instructions:",
+      "washList": [
+        "Machine wash cold on gentle cycle",
+        "Wash with like colors and mild detergent",
+        "Do not bleach",
+        "Tumble dry low or hang to air dry",
+        "Iron on medium heat while damp for best results",
+        "Do not dry clean"
+      ]
+    },
+    "additionalInfo": {
+      "Vendor": "Street Stitch",
+      "Type": "Fashion, Topwear",
+      "Size": "XS, S, M, L, XL, XXL",
+      "Color": "DarkSeaGreen, SteelBlue, SkyBlue",
+      "SKU": "236"
+    }
+  }
+]

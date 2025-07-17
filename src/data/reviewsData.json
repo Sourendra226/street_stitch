@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "text": "I ordered one jacket just to try them out — now I basically live in their clothes. Obsessed with the way everything layers. It’s rare to find a brand that feels both unique and wearable. This is it.",
+    "name": "Alex R.",
+    "place": "Los Angeles, CA",
+    "image": "assets/images/testimonial_one.png",
+    "stars": 5
+  },
+  {
+    "id": 2,
+    "text": "The lookbook section made it so easy to shop full fits. Fast shipping, great quality, and the pieces feel fresh but timeless. I’ve had random strangers ask me where I got my hoodie — that says everything.",
+    "name": "Jordan K.",
+    "place": "Austin, TX",
+    "image": "assets/images/testimonial_two.png",
+    "stars": 5
+  },
+  {
+    "id": 3,
+    "text": "From packaging to fit, everything felt premium. Street Stitch nails the details. This is how online fashion should feel. The branding’s clean, the pieces are solid, and customer service is on point.",
+    "name": "Marcus L.",
+    "place": "Chicago, IL",
+    "image": "assets/images/testimonial_three.png",
+    "stars": 5
+  }
+]
