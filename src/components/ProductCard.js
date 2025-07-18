@@ -27,7 +27,7 @@ function ProductCard({ product, showBadge = true, onRemove = null }) {
     const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
     const exists = wishlist.find((item) => item.id === id);
     if (!exists) {
-      wishlist.push({ id, name, price, image });
+      wishlist.push(product);
       localStorage.setItem("wishlist", JSON.stringify(wishlist));
       alert("Added to Wishlist!");
     } else {
@@ -38,12 +38,30 @@ function ProductCard({ product, showBadge = true, onRemove = null }) {
 
   const handleAddToCart = () => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const index = cart.findIndex((item) => item.id === id);
-    if (index !== -1) {
-      cart[index].quantity += 1;
+    const existingIndex = cart.findIndex((item) => item.id === id);
+    const firstColor =
+      Array.isArray(product.colors) && product.colors.length > 0
+        ? product.colors[0]
+        : null;
+    const firstSize =
+      Array.isArray(product.sizes) && product.sizes.length > 0
+        ? product.sizes[0]
+        : null;
+
+    if (existingIndex !== -1) {
+      cart[existingIndex].quantity += 1;
     } else {
-      cart.push({ id, name, price, image, quantity: 1 });
+      cart.push({
+        id,
+        name,
+        price,
+        image,
+        quantity: 1,
+        color: firstColor,
+        size: firstSize,
+      });
     }
+
     localStorage.setItem("cart", JSON.stringify(cart));
     window.dispatchEvent(new Event("cartUpdated"));
     alert("Added to Cart!");
@@ -163,6 +181,7 @@ ProductCard.propTypes = {
     images: PropTypes.array,
     badge: PropTypes.string,
     colors: PropTypes.array,
+    sizes: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   showBadge: PropTypes.bool,
   onRemove: PropTypes.func,

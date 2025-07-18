@@ -127,9 +127,9 @@ function Cart() {
                         <div className="aboutProd text-center text-md-start">
                           <p className="prodName">{item.name}</p>
                           <p className="prodQty mb-0">
-                            Size - {item.selectedSize || "N/A"},{" "}
+                            Size - {item.size || "N/A"},{" "}
                             <span className="text-capitalize">
-                              {getColorName(item.selectedColor)}
+                              {getColorName(item.color)}
                             </span>{" "}
                             ({item.quantity || 1})
                           </p>
