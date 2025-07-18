@@ -34,6 +34,7 @@ function LoginForm() {
       setPassword("");
     } else {
       setErrors(validationErrors);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 

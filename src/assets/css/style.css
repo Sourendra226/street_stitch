@@ -125,7 +125,11 @@ header .right_nav li:not(:last-child) {
   margin-right: 1rem;
 }
 header a.cart_btn .cartCount,
-header a.wishlist_btn .wishlistCount {
+header a.wishlist_btn .wishlistCount,
+header button.cart_btn .cartCount,
+header button.wishlist_btn .wishlistCount,
+header .cart_btn .cartCount,
+header .wishlist_btn .wishlistCount {
   width: 1.125rem;
   height: 1.125rem;
   border: transparent;
@@ -139,7 +143,11 @@ header a.wishlist_btn .wishlistCount {
   top: -4px;
 }
 header a.cart_btn .cartCount.bump,
-header a.wishlist_btn .wishlistCount.bump {
+header a.wishlist_btn .wishlistCount.bump,
+header button.cart_btn .cartCount.bump,
+header button.wishlist_btn .wishlistCount.bump,
+header .cart_btn .cartCount.bump,
+header .wishlist_btn .wishlistCount.bump {
   animation: bump 0.3s ease;
   -webkit-animation: bump 0.3s ease;
 }
@@ -236,7 +244,9 @@ header.stickyHeader .logo {
   header .right_nav li:not(:last-child) {
     display: none;
   }
-  header a.cart_btn {
+  header a.cart_btn,
+  header button.cart_btn,
+  header .cart_btn {
     position: absolute !important;
     right: 15px;
     top: 50%;
@@ -244,8 +254,16 @@ header.stickyHeader .logo {
     -webkit-transform: translateY(-50%);
     padding: 0.375rem 0 0.375rem 0.375rem;
   }
-  header a.cart_btn svg {
+  header a.cart_btn svg,
+  header button.cart_btn svg,
+  header .cart_btn svg {
     font-size: 1.5rem;
+  }
+  header a.cart_btn .cartCount,
+  header button.cart_btn .cartCount,
+  header .cart_btn .cartCount {
+    right: -10px;
+    top: -2px;
   }
 }
 
@@ -353,7 +371,9 @@ footer .copyright {
 }
 
 /** Button Styles Here **/
-.common_btn {
+.common_btn,
+a.common_btn,
+button.common_btn {
   background: var(--theme-color);
   border: 2px solid var(--theme-color);
   color: var(--white-color);
@@ -370,17 +390,23 @@ footer .copyright {
   -moz-transition: width 0.3s linear;
   -ms-transition: width 0.3s linear;
 }
-.common_btn:hover {
+.common_btn:hover,
+a.common_btn:hover,
+button.common_btn:hover {
   background: var(--white-color);
   color: var(--theme-color);
 }
-.common_btn:focus {
+.common_btn:focus,
+a.common_btn:focus,
+button.common_btn:focus {
   background: var(--focus-color);
   border-color: var(--focus-color);
   color: var(--white-color);
 }
 @media screen and (max-width: 767px) {
-  .common_btn {
+  .common_btn,
+  a.common_btn,
+  button.common_btn {
     width: 100%;
     padding: 0.875rem 1.5rem;
     font-size: 1.25rem;
@@ -469,6 +495,7 @@ footer .copyright {
   padding: 0;
   border: none;
   margin-bottom: 0;
+  text-align: left;
 }
 .prod_card .prod_prc {
   color: var(--theme-color);
@@ -575,7 +602,9 @@ footer .copyright {
   .prod_card .prod_prc .wasPrice {
     font-size: 1rem;
   }
-  .prod_card a.common_btn {
+  .prod_card a.common_btn,
+  .prod_card .common_btn,
+  .prod_card button.common_btn {
     width: fit-content;
     padding: 0.5rem 1.25rem;
     font-size: 1rem;
@@ -895,6 +924,7 @@ footer .copyright {
 .categories {
   background: var(--bg-color);
   padding: 3.75rem 0;
+  margin-top: -0.438rem;
 }
 .categories .categoriesBox {
   display: block;
@@ -1467,6 +1497,7 @@ footer .copyright {
   margin-bottom: 1rem;
 }
 .blog .blog_card a.blog_view_btn,
+.blog .blog_card button.blog_view_btn,
 .blog .blog_card .blog_view_btn {
   font-size: 1rem;
   font-weight: 500;
@@ -1483,11 +1514,13 @@ footer .copyright {
   border: none;
 }
 .blog .blog_card a.blog_view_btn span,
+.blog .blog_card button.blog_view_btn span,
 .blog .blog_card .blog_view_btn span {
   position: relative;
   z-index: 1;
 }
 .blog .blog_card a.blog_view_btn::after,
+.blog .blog_card button.blog_view_btn::after,
 .blog .blog_card .blog_view_btn::after {
   content: "";
   position: absolute;
@@ -1502,11 +1535,13 @@ footer .copyright {
   -ms-transition: all 0.3s linear;
 }
 .blog .blog_card a.blog_view_btn:hover,
+.blog .blog_card button.blog_view_btn:hover,
 .blog .blog_card .blog_view_btn:hover {
   color: var(--white-color);
   padding: 0 0.375rem;
 }
 .blog .blog_card a.blog_view_btn:hover::after,
+.blog .blog_card button.blog_view_btn:hover::after,
 .blog .blog_card .blog_view_btn:hover::after {
   height: 100%;
   bottom: 0;
@@ -1603,16 +1638,17 @@ footer .copyright {
   font-size: 1.125rem;
 }
 .products .filterSec a.clearFilter,
-.products .filterSec a.closeFilter {
+.products .filterSec a.closeFilter,
+.products .filterSec button.clearFilter,
+.products .filterSec button.closeFilter,
+.products .filterSec .clearFilter,
+.products .filterSec .closeFilter {
   font-size: 0.875rem;
   font-weight: 500;
   color: #007bff;
 }
 .products .filterSec .clearFilter,
 .products .filterSec .closeFilter {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #007bff;
   background: transparent;
   border: none;
 }
@@ -1656,7 +1692,7 @@ footer .copyright {
   font-weight: 500;
 }
 .noUi-connect {
-  background: #007bff;
+  background: #007bff !important;
 }
 .noUi-horizontal .noUi-handle {
   width: 16px !important;
@@ -1763,11 +1799,15 @@ footer .copyright {
   .products .productListHead p {
     font-size: 1.125rem;
   }
-  .prod_card a.common_btn {
+  .prod_card a.common_btn,
+  .prod_card button.common_btn,
+  .prod_card .common_btn {
     padding: 0.5rem;
     font-size: 0.875rem;
   }
-  .prod_card a.common_btn.add_cart_btn {
+  .prod_card a.common_btn.add_cart_btn,
+  .prod_card button.common_btn.add_cart_btn,
+  .prod_card .common_btn.add_cart_btn {
     margin-right: 0.5rem !important;
   }
 }
@@ -1878,7 +1918,8 @@ button.paginationNextBtn {
   line-height: 1.1;
   margin-bottom: 0.375rem;
 }
-.prod_dtls .prodDtls_box .prod_rating i {
+.prod_dtls .prodDtls_box .prod_rating i,
+.prod_dtls .prodDtls_box .prod_rating svg {
   color: #fb9b0a;
 }
 .prod_dtls .prodDtls_box .prod_rating span {
@@ -2011,18 +2052,21 @@ button.paginationNextBtn {
   margin-bottom: 1.875rem;
 }
 .prod_dtls .prodDtls_box .btns_grp a.common_btn,
+.prod_dtls .prodDtls_box .btns_grp button.common_btn,
 .prod_dtls .prodDtls_box .btns_grp .common_btn {
   font-size: 1.375rem;
   letter-spacing: 0.12em;
   padding: 0.875rem 2.5rem;
 }
 .prod_dtls .prodDtls_box .btns_grp a.addCart_btn,
+.prod_dtls .prodDtls_box .btns_grp button.addCart_btn,
 .prod_dtls .prodDtls_box .btns_grp .addCart_btn {
   background: var(--white-color);
   color: var(--theme-color);
   margin-right: 2.5rem;
 }
 .prod_dtls .prodDtls_box .btns_grp a.addCart_btn:hover,
+.prod_dtls .prodDtls_box .btns_grp button.addCart_btn:hover,
 .prod_dtls .prodDtls_box .btns_grp .addCart_btn:hover {
   background: var(--theme-color);
   color: var(--white-color);
@@ -2132,18 +2176,24 @@ button.paginationNextBtn {
   margin-bottom: 0;
   margin-right: 2rem;
 }
-.prod_dtls .otherInfos .tab-content .firstReview a.common_btn {
+.prod_dtls .otherInfos .tab-content .firstReview a.common_btn,
+.prod_dtls .otherInfos .tab-content .firstReview button.common_btn,
+.prod_dtls .otherInfos .tab-content .firstReview .common_btn {
   font-size: 1.125rem;
   font-weight: 500;
   padding: 0.625rem 2.25rem;
 }
 @media screen and (min-width: 1400px) {
-  .prod_dtls .prodDtls_box .btns_grp a.common_btn {
+  .prod_dtls .prodDtls_box .btns_grp a.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp button.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp .common_btn {
     padding: 0.875rem 3.5rem;
   }
 }
 @media screen and (max-width: 1199px) {
-  .prod_dtls .prodDtls_box .btns_grp a.common_btn {
+  .prod_dtls .prodDtls_box .btns_grp a.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp button.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp .common_btn {
     padding: 0.875rem 1.375rem;
     font-size: 1.25rem;
   }
@@ -2156,7 +2206,9 @@ button.paginationNextBtn {
   .prod_dtls .prodDtls_box .prod_name {
     font-size: 1.25rem;
   }
-  .prod_dtls .prodDtls_box .btns_grp a.common_btn {
+  .prod_dtls .prodDtls_box .btns_grp a.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp button.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp .common_btn {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
@@ -2180,10 +2232,12 @@ button.paginationNextBtn {
     height: 56px;
   }
   .prod_dtls .prodDtls_box .btns_grp a.common_btn,
+  .prod_dtls .prodDtls_box .btns_grp button.common_btn,
   .prod_dtls .prodDtls_box .btns_grp .common_btn {
     font-size: 1.25rem;
   }
   .prod_dtls .prodDtls_box .btns_grp a.addCart_btn,
+  .prod_dtls .prodDtls_box .btns_grp button.addCart_btn,
   .prod_dtls .prodDtls_box .btns_grp .addCart_btn {
     margin-right: 0;
     margin-bottom: 2rem;
@@ -2469,16 +2523,22 @@ button.paginationNextBtn {
 .cart_content table.cartData td:last-child {
   width: 8%;
 }
-.cart_content .btn_grp a.continueShop_btn {
+.cart_content .btn_grp a.continueShop_btn,
+.cart_content .btn_grp button.continueShop_btn,
+.cart_content .btn_grp .continueShop_btn {
   background: var(--white-color);
   color: var(--theme-color);
   margin-right: 2.5rem;
 }
-.cart_content .btn_grp a.continueShop_btn:hover {
+.cart_content .btn_grp a.continueShop_btn:hover,
+.cart_content .btn_grp button.continueShop_btn:hover,
+.cart_content .btn_grp .continueShop_btn:hover {
   background: var(--theme-color);
   color: var(--white-color);
 }
-.cart_content .btn_grp a.common_btn {
+.cart_content .btn_grp a.common_btn,
+.cart_content .btn_grp button.common_btn,
+.cart_content .btn_grp .common_btn {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -2495,7 +2555,9 @@ button.paginationNextBtn {
   margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 991px) {
-  .cart_content .btn_grp a.common_btn {
+  .cart_content .btn_grp a.common_btn,
+  .cart_content .btn_grp button.common_btn,
+  .cart_content .btn_grp .common_btn {
     padding: 0.75rem 1.25rem;
     font-size: 1.125rem;
   }
@@ -2523,10 +2585,14 @@ button.paginationNextBtn {
     line-height: 1;
     background: #cccccc;
   }
-  .cart_content .btn_grp a.continueShop_btn {
+  .cart_content .btn_grp a.continueShop_btn,
+  .cart_content .btn_grp button.continueShop_btn,
+  .cart_content .btn_grp .continueShop_btn {
     margin-right: 0;
   }
-  .cart_content .btn_grp a.checkout_btn {
+  .cart_content .btn_grp a.checkout_btn,
+  .cart_content .btn_grp button.checkout_btn,
+  .cart_content .btn_grp .checkout_btn {
     margin-bottom: 2.5rem;
   }
   .cart_content table.cartData tbody tr {
@@ -2567,6 +2633,9 @@ button.paginationNextBtn {
 }
 .checkout_content .form-control {
   border: 1px solid #dddddd;
+}
+.checkout_content .form-control.is-invalid {
+  border-color: var(--bs-form-invalid-border-color);
 }
 .checkout_content .formFields:not(:last-of-type) {
   margin-bottom: 1.25rem;
@@ -2742,6 +2811,8 @@ button.paginationNextBtn {
   .checkout_content .order_summary .summaryBox .grandTotal p {
     font-size: 1.125rem;
   }
+  .checkout_content a.common_btn,
+  .checkout_content button.common_btn,
   .checkout_content .common_btn {
     padding: 0.875rem 3.625rem;
   }
@@ -2807,7 +2878,9 @@ button.paginationNextBtn {
   color: var(--black-color);
   margin-bottom: 1.25rem;
 }
-.thankyou_content .continue_shopBox a.common_btn {
+.thankyou_content .continue_shopBox a.common_btn,
+.thankyou_content .continue_shopBox button.common_btn,
+.thankyou_content .continue_shopBox .common_btn {
   padding: 0.625rem 4.625rem;
 }
 .thankyou_content .continue_shopBox {
@@ -2880,8 +2953,15 @@ button.paginationNextBtn {
 .login_content .form-control {
   border: 1px solid #dddddd;
 }
+.login_content .form-control.is-invalid {
+  border-color: var(--bs-form-invalid-border-color);
+}
 .login_content a.signupBtn,
-.login_content a.forgotPasswordBtn {
+.login_content a.forgotPasswordBtn,
+.login_content button.signupBtn,
+.login_content button.forgotPasswordBtn,
+.login_content .signupBtn,
+.login_content .forgotPasswordBtn {
   font-size: 1rem;
   font-weight: 500;
   color: #007bff;
@@ -2908,6 +2988,9 @@ button.paginationNextBtn {
 .signup_content .form-control {
   border: 1px solid #dddddd;
 }
+.signup_content .form-control.is-invalid {
+  border-color: var(--bs-form-invalid-border-color);
+}
 
 /***************************************/
 /** FORGOT PASSWORD PAGE STYLES HERE **/
@@ -2929,4 +3012,7 @@ button.paginationNextBtn {
 }
 .forgotPassword_content .form-control {
   border: 1px solid #dddddd;
+}
+.forgotPassword_content .form-control.is-invalid {
+  border-color: var(--bs-form-invalid-border-color);
 }

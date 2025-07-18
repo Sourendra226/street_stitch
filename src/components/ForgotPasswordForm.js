@@ -4,20 +4,46 @@ function ForgotPasswordForm() {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const validateForgotPasswordForm = () => {
+    const newErrors = {};
+
+    if (!email) {
+      newErrors.email = "Email is required.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      newErrors.email = "Invalid email format.";
+    }
+
+    if (!newPassword) {
+      newErrors.newPassword = "New password is required.";
+    } else if (newPassword.length < 6) {
+      newErrors.newPassword = "Password must be at least 6 characters.";
+    }
+
+    if (!confirmPassword) {
+      newErrors.confirmPassword = "Please confirm your password.";
+    } else if (newPassword !== confirmPassword) {
+      newErrors.confirmPassword = "Passwords do not match.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (newPassword !== confirmPassword) {
-      setError("Passwords Do Not Match!");
-      return;
+    if (validateForgotPasswordForm()) {
+      console.log("Submitted:", { email, newPassword });
+      alert("Password Reset Successfully!");
+      setEmail("");
+      setNewPassword("");
+      setConfirmPassword("");
+      setErrors({});
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
-    setError("");
-    // Submit logic goes here
-    console.log("Submitted:", { email, newPassword });
-    alert("Password Reset Successfully!");
   };
 
   return (
@@ -28,14 +54,16 @@ function ForgotPasswordForm() {
             <h3 className="text-center text-uppercase mb-4">
               Reset Your Password
             </h3>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} noValidate>
               <div className="formFields emailFld mb-4">
                 <label htmlFor="login_email" className="form-label">
                   Email<sup>*</sup>
                 </label>
                 <input
                   type="email"
-                  className="form-control rounded-0"
+                  className={`form-control rounded-0 ${
+                    errors.email ? "is-invalid" : ""
+                  }`}
                   id="login_email"
                   placeholder="Email"
                   name="login_email"
@@ -43,6 +71,9 @@ function ForgotPasswordForm() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
+                {errors.email && (
+                  <div className="invalid-feedback">{errors.email}</div>
+                )}
               </div>
 
               <div className="formFields newPasswordFld mb-4">
@@ -51,7 +82,9 @@ function ForgotPasswordForm() {
                 </label>
                 <input
                   type="password"
-                  className="form-control rounded-0"
+                  className={`form-control rounded-0 ${
+                    errors.newPassword ? "is-invalid" : ""
+                  }`}
                   id="new_password"
                   placeholder="New Password"
                   name="new_password"
@@ -59,6 +92,9 @@ function ForgotPasswordForm() {
                   onChange={(e) => setNewPassword(e.target.value)}
                   required
                 />
+                {errors.newPassword && (
+                  <div className="invalid-feedback">{errors.newPassword}</div>
+                )}
               </div>
 
               <div className="formFields confirmNewPasswordFld mb-5">
@@ -67,7 +103,9 @@ function ForgotPasswordForm() {
                 </label>
                 <input
                   type="password"
-                  className="form-control rounded-0"
+                  className={`form-control rounded-0 ${
+                    errors.confirmPassword ? "is-invalid" : ""
+                  }`}
                   id="confirm_new_password"
                   placeholder="Confirm New Password"
                   name="confirm_new_password"
@@ -75,13 +113,12 @@ function ForgotPasswordForm() {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
                 />
+                {errors.confirmPassword && (
+                  <div className="invalid-feedback">
+                    {errors.confirmPassword}
+                  </div>
+                )}
               </div>
-
-              {error && (
-                <div className="alert alert-danger text-center py-2">
-                  {error}
-                </div>
-              )}
 
               <button
                 type="submit"

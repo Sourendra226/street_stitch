@@ -2,6 +2,26 @@ import { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
 import PropTypes from "prop-types";
 
+// Sorting logic
+const sortProducts = (productsToSort, sortOption) => {
+  switch (sortOption) {
+    case "bestSelling":
+      return [...productsToSort].sort((a, b) => b.sales - a.sales);
+    case "newestFirst":
+      return [...productsToSort].sort(
+        (a, b) => new Date(b.date) - new Date(a.date)
+      );
+    case "alphabeticalOrder":
+      return [...productsToSort].sort((a, b) => a.name.localeCompare(b.name));
+    case "priceLowtoHigh":
+      return [...productsToSort].sort((a, b) => a.price - b.price);
+    case "priceHightoLow":
+      return [...productsToSort].sort((a, b) => b.price - a.price);
+    default:
+      return productsToSort;
+  }
+};
+
 function ProductGrid({
   products = [],
   currentMinPrice,
@@ -14,40 +34,6 @@ function ProductGrid({
 }) {
   const itemsPerPage = 9;
   const [filteredProducts, setFilteredProducts] = useState([]);
-
-  // Sorting logic
-  const sortProducts = (productsToSort) => {
-    switch (sortOption) {
-      case "bestSelling":
-        return [...productsToSort].sort((a, b) => b.sales - a.sales);
-      case "newestFirst":
-        return [...productsToSort].sort(
-          (a, b) => new Date(b.date) - new Date(a.date)
-        );
-      case "alphabeticalOrder":
-        return [...productsToSort].sort((a, b) => a.name.localeCompare(b.name));
-      case "priceLowtoHigh":
-        return [...productsToSort].sort((a, b) => a.price - b.price);
-      case "priceHightoLow":
-        return [...productsToSort].sort((a, b) => b.price - a.price);
-      default:
-        return productsToSort;
-    }
-  };
-
-  // Reset to page 1 when filters/sort/price changes
-  useEffect(() => {
-    if (currentPage !== 1) {
-      setCurrentPage(1);
-    }
-  }, [
-    filters,
-    sortOption,
-    currentMinPrice,
-    currentMaxPrice,
-    currentPage,
-    setCurrentPage,
-  ]);
 
   useEffect(() => {
     let filtered = products.filter(
@@ -109,8 +95,13 @@ function ProductGrid({
       );
     }
 
-    const sorted = sortProducts(filtered);
+    const sorted = sortProducts(filtered, sortOption);
+    const newTotalPages = Math.ceil(sorted.length / itemsPerPage);
+    if (currentPage > newTotalPages) {
+      setCurrentPage(1);
+    }
     setFilteredProducts(sorted);
+    setTotalPages(newTotalPages);
 
     if (setTotalPages) {
       setTotalPages(Math.ceil(sorted.length / itemsPerPage));
@@ -121,6 +112,8 @@ function ProductGrid({
     currentMaxPrice,
     sortOption,
     filters,
+    currentPage,
+    setCurrentPage,
     setTotalPages,
   ]);
 
