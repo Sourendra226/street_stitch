@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./assets/css/style.css";
 import products from "./data/products.json";
 
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import SingleProduct from "./pages/SingleProduct";
@@ -21,6 +22,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products allProducts={products} />} />
