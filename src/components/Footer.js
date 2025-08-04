@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -9,12 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-  const location = useLocation();
-  const [year, setYear] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, [location]);
+  const year = new Date().getFullYear();
 
   return (
     <footer>
@@ -202,7 +196,7 @@ function Footer() {
               </p>
               <p className="footer_text support_mail">
                 <a
-                  href="mailto:support@Street Stitch.com"
+                  href="mailto:support@streetstitch.com"
                   className="text-decoration-none d-flex align-items-center"
                 >
                   <i className="fa-solid fa-envelope"></i>

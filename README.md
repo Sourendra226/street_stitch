@@ -4,7 +4,6 @@
 
 <pre>
 STREET_STITCH/
-├── node_modules/
 ├── public/
 ├── src/
 │   ├── assets/
