@@ -215,41 +215,17 @@ function Footer() {
           </div>
           <div className="col-md-6">
             <ul className="list-inline mb-0 text-center text-md-end payment_icons">
-              <li className="list-inline-item">
-                <img
-                  src="/assets/images/visa.svg"
-                  alt="Visa"
-                  className="img-fluid"
-                />
-              </li>
-              <li className="list-inline-item">
-                <img
-                  src="/assets/images/mastercard.svg"
-                  alt="MasterCard"
-                  className="img-fluid"
-                />
-              </li>
-              <li className="list-inline-item">
-                <img
-                  src="/assets/images/discover.svg"
-                  alt="Discover"
-                  className="img-fluid"
-                />
-              </li>
-              <li className="list-inline-item">
-                <img
-                  src="/assets/images/amex.svg"
-                  alt="American Express"
-                  className="img-fluid"
-                />
-              </li>
-              <li className="list-inline-item">
-                <img
-                  src="/assets/images/paypal.svg"
-                  alt="PayPal"
-                  className="img-fluid"
-                />
-              </li>
+              {["visa", "mastercard", "discover", "amex", "paypal"].map(
+                (card) => (
+                  <li className="list-inline-item" key={card}>
+                    <img
+                      src={`/assets/images/${card}.svg`}
+                      alt={card.charAt(0).toUpperCase() + card.slice(1)}
+                      className="img-fluid"
+                    />
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </div>
